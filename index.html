@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		classes and object
+	</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+	}
+		.pageTitle{
+			color: white;
+			background-color:rgb(55,193,6);
+			text-align: center;
+			padding:10px;
+			text-transform: capitalize;
+		}
+		.root{
+			width: 200px;
+			position: absolute;
+			height: 240px;
+			padding: 20px;
+			top: 200px;
+			left: 200px;
+			display: flex;
+			font-size:20px;
+			background-color: rgb(27,147,255);
+			color: white;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+			
+		}
+		.fontNew{
+			font-size: 20px;
+		}
+		#msg{
+			background-color: rgb(98,169,242);
+			color:white;
+			padding:5px;
+			font-size:20px;
+			position: absolute;
+			top: 300px; 
+			left: 500px;
+			box-shadow: 5px 5px rgb(204,204,204);
+		}
+		#msg1{
+			background-color: rgb(98,169,242);
+			color:white;
+			padding:5px;
+			font-size:20px;
+			position: absolute;
+			top: 350px; 
+			left: 500px;
+			box-shadow: 5px 5px rgb(204,204,204);
+		}
+	</style>
+</head>
+<body>
+<h2 class="pageTitle">object oriented programming using javascript</h2>
+ 
+ <div class="root">
+
+ 	<div>
+ 	<label for="name">Name</label><br> <input style="width:160px" type="text" id="name" class="fontNew">
+ 	</div>
+
+ 	<div>
+ 	<label for="dept">Department</label><br>
+ 	<select id="dept" style="width:166px" class="fontNew">
+ 		<option value="networking" selected>networking</option>
+ 		<option value="fullStack">fullStack</option>
+ 		<option value="database">database</option>
+ 		<option value="itSecurity">itSecurity</option>
+ 		<option value="tester">tester</option>
+ 		<option value="technicalengineer">technical engineer</option>
+ 	</select>
+ 	</div>
+
+ 	<div>
+ 	<label for="exp">Experience</label><br>
+ 	<input type="number" min=0 max=30 id="exp" style="width:158px" class="fontNew">
+    </div>
+
+    <div>
+ 	<label for="post">Post</label><br>
+
+ 	<select id="post" style="width:166px" class="fontNew">
+ 		<option value="admin" selected>admin</option>
+ 		<option value="engineer">engineer</option>
+ 		<option value="superadmin">super admin</option>
+ 		<option value="project manager">project manager</option>
+ 		<option value="expert">expert</option>
+
+ 	</select>
+ 	
+    </div>
+    <div>
+    	<button id="butn" onclick="getData()">
+    		submit
+    	</button>
+    </div>
+ </div>
+ <div id=msg style="display: none;">
+ </div>
+ <div id=msg1 style="display: none;">
+ </div>
+ <script src="javascriptOOP.js"></script>
+</body>
+</html>
